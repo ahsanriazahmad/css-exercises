@@ -5,6 +5,9 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
 }
 
 img {
@@ -16,6 +19,7 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  padding: 8px 16px;
 }
 
 input {
@@ -25,3 +29,46 @@ input {
   width: 400px;
   margin-bottom: 16px;
 }
+
+a{
+  color: #666;
+  text-decoration: none;
+}
+
+li{
+  list-style: none;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-links{
+  display: flex;
+  flex-direction: row;
+  padding: 16px;
+  gap: 16px;
+}
+
+.right-links{
+  display: flex;
+  flex-direction: row;
+  padding: 16px;
+  gap: 16px;
+}
+
+.footer{
+  display: flex;
+  justify-content: space-between;
+  background: #eee;
+}
+
+.content{
+  flex: 1 1 0;
+  display: flex;
+  justify-content: center;
+  align-items: center; /** not align-content because we are dealing the items not the lines where the items reside in **/
+  flex-direction: column;
+}
+
